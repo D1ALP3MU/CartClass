@@ -10,12 +10,16 @@ class App extends Component {
     ]
   }
 
+  agregarAlCarro = (producto) => {
+    console.log(producto);
+  }
+
   render() {
     return (
       <div>
         <Productos
           productos={ this.state.productos }
-          agregarAlCarro={ ()=> console.log('Agregar al carrito') } 
+          agregarAlCarro={ this.agregarAlCarro } 
         />
       </div>
     )
