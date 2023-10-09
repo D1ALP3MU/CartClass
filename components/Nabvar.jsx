@@ -17,10 +17,18 @@ const styles = {
 
 class Nabvar extends Component {
     render() {
+        const { carrito, esCarritoVisible, mostrarCarro, disminuirCarrito, aumentarCarrito, eliminarCarrito } = this.props
         return (
             <nav style={styles.nabvar}>
                 <Logo />
-                <Cart />
+                <Cart 
+                    carrito={carrito}
+                    esCarritoVisible={esCarritoVisible}
+                    mostrarCarro={mostrarCarro}
+                    disminuirCarrito={disminuirCarrito}
+                    aumentarCarrito={aumentarCarrito}
+                    eliminarCarrito={eliminarCarrito}
+                />
             </nav>
         )
     }

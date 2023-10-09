@@ -9,7 +9,7 @@ const styles = {
         flexDirection: 'column',
     },
     container: {
-        width: '1200px',
+        width: '80vw',
     }
 }
 
